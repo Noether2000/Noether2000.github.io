@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="量子力学科普文想法源于光老师的“本次活动不限制文体”换头文学，严肃地说，国际通用说法是Alice和Bob污染tag致歉可以把文章本身当成一个笑话赫默：今天我们主要内容是贝尔不等式，它是二十世纪极为重要的一个发现，给玻尔和爱因斯坦的争论画上了句号，宣告了爱因斯坦所深信不疑的世界的消逝，并改变了人类几千年对自然的固有观念。伊芙利特：玻尔和爱因斯坦之间有什么争论？像你和塞雷娅那样吗？赫默：……不是，爱因">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2020.07.20 Bell不等式的判决">
+<meta property="og:url" content="http://example.com/1970/01/01/%E5%B0%8F%E8%AF%B4/2020.07.20%20Bell%E4%B8%8D%E7%AD%89%E5%BC%8F%E7%9A%84%E5%88%A4%E5%86%B3/index.html">
+<meta property="og:site_name" content="风物">
+<meta property="og:description" content="量子力学科普文想法源于光老师的“本次活动不限制文体”换头文学，严肃地说，国际通用说法是Alice和Bob污染tag致歉可以把文章本身当成一个笑话赫默：今天我们主要内容是贝尔不等式，它是二十世纪极为重要的一个发现，给玻尔和爱因斯坦的争论画上了句号，宣告了爱因斯坦所深信不疑的世界的消逝，并改变了人类几千年对自然的固有观念。伊芙利特：玻尔和爱因斯坦之间有什么争论？像你和塞雷娅那样吗？赫默：……不是，爱因">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="1970-01-01T00:00:00.000Z">
+<meta property="article:modified_time" content="2023-04-20T16:28:30.000Z">
+<meta property="article:author" content="rjgong">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/1970/01/01/%E5%B0%8F%E8%AF%B4/2020.07.20%20Bell%E4%B8%8D%E7%AD%89%E5%BC%8F%E7%9A%84%E5%88%A4%E5%86%B3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>2020.07.20 Bell不等式的判决 | 风物</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">风物</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/1970/01/01/%E5%B0%8F%E8%AF%B4/2020.07.20%20Bell%E4%B8%8D%E7%AD%89%E5%BC%8F%E7%9A%84%E5%88%A4%E5%86%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="rjgong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="风物">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2020.07.20 Bell不等式的判决
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 1970-01-01 08:00:00" itemprop="dateCreated datePublished" datetime="1970-01-01T08:00:00+08:00">1970-01-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-04-21 00:28:30" itemprop="dateModified" datetime="2023-04-21T00:28:30+08:00">2023-04-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B0%8F%E8%AF%B4/" itemprop="url" rel="index"><span itemprop="name">小说</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>量子力学科普文<br>想法源于光老师的“本次活动不限制文体”<br>换头文学，严肃地说，国际通用说法是Alice和Bob<br>污染tag致歉<br>可以把文章本身当成一个笑话<br>赫默：今天我们主要内容是贝尔不等式，它是二十世纪极为重要的一个发现，给玻尔和爱因斯坦的争论画上了句号，宣告了爱因斯坦所深信不疑的世界的消逝，并改变了人类几千年对自然的固有观念。<br>伊芙利特：玻尔和爱因斯坦之间有什么争论？像你和塞雷娅那样吗？<br>赫默：……不是，爱因斯坦坚信世界是确定的，严格遵守因果律的，而玻尔创立的量子力学理论却把概率和不确定性引入了物理学，这让爱因斯坦无法接受。<br>伊芙利特：那他们最后和解了吗？<br>赫默：没有，爱因斯坦始终无法接受量子论，这导致他试图通过广义相对论来统一引力和电磁力的努力最终失败。现代物理学家认为，使用量子场论实现大统一理论是更有希望的一条路。<br>白面鸮：（相爱相杀，爱因斯坦和玻尔szd）<br>赫默：想象这样一个实验，我给白面鸮和华法琳助教分别发送一个粒子，她们同时测量各自粒子的性质。华法琳随机测量Q、R性质中的一个，白面鸮随机测量S、T性质中的一个。为了简单起见，测量只有-1和+1两个结果，各有一定概率发生。<br>华法琳：我能和白咕咕测量同样的性质嘛？<br>赫默：不行，而且你们之间不能有沟通，必须保证测量的随机性。<br>华法琳：……<br>白面鸮：抱歉，请问“同时”该怎么理解？<br>赫默：意思是，距离&#x2F;相差时间&gt;光速，这样按照相对论，两者是没有因果关系的。<br>白面鸮：白面鸮明白了。<br>赫默：对于式子QS+RS+RT-QT，它等于(Q+R)S+(R-Q)T，因为Q、R、S、T等于正负1，所以Q+R和R-Q中必然有一个为正负2，一个为0，因此原式等于正负2。<br>赫默：我们考虑上式的期望值，也可以理解为多次测量的平均值，我们有E(QS+RS+RT-QT)&lt;&#x3D;2，因为只要有概率出现值为-2，那么平均值就达不到2了。同样的，我们可以把它拆开，得到E(QS)+E(RS)+E(RT)-E(QT)&lt;&#x3D;2，这就是所谓的Bell不等式。<br>伊芙利特：那么它是Bell发现的了？<br>赫默：其实它是众多Bell不等式中的一个，也称为CHSH不等式，由四个发现者的名字命名，这些不等式的第一个是John Bell发现的。<br>伊芙利特：它说明了什么呢？<br>赫默：它给出了一个在经典理论上绝对无法违反的上界。事实上，作为爱因斯坦的追随者，贝尔正是希望通过这个不等式证明量子力学是不完备的。我们马上可以看到，对此量子力学有不同的看法。<br>赫默：对于量子力学的情况，只考虑一种特殊的双量子比特。|y&gt;&#x3D;(|01&gt;-|10&gt;)&#x2F;2，继续由华法琳测量第一个量子比特，白面鸮测量第二个量子比特。<br>白面鸮：系统判断华白tag中了解张量积的人应该几乎没有，老师可以跳过对上面式子的解释。<br>伊芙利特：？华白tag是什么？<br>赫默：好的。同时只针对四种特殊的测量方法，Q&#x3D;Z，R&#x3D;X，S&#x3D;(-Z-X)&#x2F;根号2，T&#x3D;(Z-X)&#x2F;根号2，其中的Z、X是两个泡利矩阵，它们在量子力学中有着广泛的应用，分别为<br>1  0  0 1<br>0    -1 和 1 0<br>赫默：我们通过计算（特征值）得到，它们的测量结果同样是1或者-1。但是，E(QS)+E(RS)+E(RT)-E(QT)的计算结果是2根号2（其中E(QS)&#x3D;&lt;y|QS|y&gt;），换句话说，量子力学预言的结果超过了经典理论预言的极限。<br>赫默：而这是可以通过实验检测的。并且实验结果证明了量子力学的正确性。<br>伊芙利特：怎么会这样？<br>赫默：这说明经典理论设计的实验前提中存在错误，经典理论要求：<br>1.粒子的性质是客观存在的，比如说物体的速度、质量等，它们不会随着我们的测量而改变，这被称为实在性假设。<br>2.我的测量结果不会对你的测量结果造成影响。换而言之，粒子间信息交流的速度不能超过光速，形成超距作用，这被称为定域性假设。<br>赫默：因此，这两个假设虽然长久以来几乎被当作不言自明的真理，但它们中至少有一个是错误的。<br>赫默：放弃实在性假设是当今大多数量子物理学家的做法，但这意味着，不存在独立的物理性质，而作为系统的测量结果出现。换而言之，世界依赖我们的观察而存在，实在令人难以置信。<br>赫默：还有些物理学家选择放弃定域性假设，但超光速的存在暗示着时间旅行、违反熵增定律等情况是可能的，这同样让人难以接受。<br>赫默：因此，世界比我们能想象的更加奇妙。<br>伊芙利特：下课了是吗？赫默再见！<br>华法琳：白咕咕，我们去逛cp26吧，听说有好多赛赫同人本。<br>白面鸮：白面鸮同意。<br>赫默：？人呢？<br>赫默：算了，关于|y&gt;，这时一个狄拉克符号，等价于y的列向量，而&lt;y|则是|y&gt;的共轭转置，我们可以得到&lt;y||y&gt;(简写为&lt;y|y&gt;)就是高中学到的(y,y)，y的内积。对于|0&gt;和|1&gt;，是量子物理中规定的两个特殊向量，分别为(1,0)和(0,1)对应的的列向量，|01&gt;是|0&gt;|1&gt;的简写，表示|0&gt;和|1&gt;的张量积，运算方法是(0|1&gt;,1|1&gt;)，结果是(0,0,0,1)的列向量。<br>赫默：下课。<br>赫默：老师再见。<br>赫默：……</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/1970/01/01/%E5%B0%8F%E8%AF%B4/2020.06.15%20%E6%99%9A%E9%97%B4%E9%80%B8%E8%AF%9D/" rel="prev" title="2020.06.15 晚间逸话">
+      <i class="fa fa-chevron-left"></i> 2020.06.15 晚间逸话
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/1970/01/01/%E5%B0%8F%E8%AF%B4/2020.07.09%20%E4%B8%80%E8%B5%B7%E6%9D%A5%E6%8A%93%E6%98%9F%E6%9E%81%E5%90%A7/" rel="next" title="2020.07.09 一起来抓星极吧">
+      2020.07.09 一起来抓星极吧 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">rjgong</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">200</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">rjgong</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
